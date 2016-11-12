@@ -11,7 +11,7 @@ function paginationbar(pages, page) {
     var out = "";
     out += "<li"+alert_current_page(1, page)+"><a href=\"#\">1</a></li>";
 
-    if (page-5 > 5) out += "<li><span>...</span></li>";
+    if (page-2 > 5) out += "<li><span>...</span></li>";
 
     for (i = Math.max(2, page-5); i <= Math.min(pages-1, page+5); i++) {
         out += "<li"+alert_current_page(i, page)+"><a href=\"#\">" + i + "</a></li>";
