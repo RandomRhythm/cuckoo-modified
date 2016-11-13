@@ -16,16 +16,16 @@ function paginationbar(pages, page) {
         intminpage = 2;
 	} 
     else {
-	    intminpage = 0;
+	intminpage = 0;
 	}
     
     if (pages != 8 && page+5 < pages-2){
         intmaxpage = 3;
-	    intmaxcount = 1;
+	intmaxcount = 1;
     }
     else {
         intmaxpage = 1;
-	    intmaxcount = 0;
+	intmaxcount = 0;
     }
     
     for (i = Math.max(2 + intminpage, page-5); i <= Math.min(pages - intmaxpage, page+6- intmaxcount); i++) {
