@@ -203,7 +203,7 @@ class RunProcessing(object):
                                          timediff.microseconds / 1000)),
                 })
 
-            # If succeeded, return they module's key name and the data to be
+            # If succeeded, return the module's key name and the data to be
             # appended to it.
             return {current.key: data}
         except CuckooDependencyError as e:
